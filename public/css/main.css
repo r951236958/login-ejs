@@ -1,0 +1,159 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+body {
+  background-color: #2c303a;
+}
+
+p {
+  line-height: 2rem;
+}
+
+header,
+main,
+footer {
+  padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+
+  header,
+  main,
+  footer {
+    padding-left: 0;
+  }
+}
+
+nav.top-nav {
+  height: 110px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+  background-color: transparent
+}
+
+nav.top-nav h1.header {
+  margin: 0;
+  padding-top: 22px
+}
+
+a.sidenav-trigger.top-nav {
+  position: absolute;
+  text-align: center;
+  height: 48px;
+  width: 48px;
+  top: 28px;
+  float: none;
+  margin-left: 1.5rem;
+  color: #fff;
+  font-size: 36px;
+  z-index: 2
+}
+
+a.sidenav-trigger.top-nav i {
+  font-size: 32px
+}
+
+@media only screen and (max-width: 992px) {
+
+  header,
+  main,
+  footer {
+    padding-left: 0
+  }
+
+  h5>span {
+    display: block;
+    margin: 0 0 15px 0
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  a.sidenav-trigger.top-nav {
+    left: 0
+  }
+
+  ul.sidenav.sidenav-fixed {
+    border: 0
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  nav .nav-wrapper {
+    text-align: center
+  }
+
+  nav .nav-wrapper a.page-title {
+    font-size: 36px
+  }
+}
+
+@media only screen and (min-width: 601px) {
+
+  main>.container,
+  body>.page-footer>.container,
+  .top-nav>.container,
+  #index-banner>.container,
+  .github-commit>.container {
+    width: 100%
+  }
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255, 255, 255, .9);
+}
+
+.parallax-container .section {
+  width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.brand-logo {
+  margin: 0 0 0 -6px;
+  font: 0/0 a;
+  background: url(https://raw.githubusercontent.com/r951236958/express-with-google-sheets/main/public/images/google-logo-white.min.svg) no-repeat;
+  background-size: 148px 48x;
+  width: 220px;
+  height: 31px;
+  opacity: 0.5;
+}

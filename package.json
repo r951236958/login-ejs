@@ -1,0 +1,38 @@
+{
+    "name": "login-ejs",
+    "version": "0.0.1",
+    "private": true,
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "babel-plugin-prismjs": "2.0.1",
+        "config": "3.3.2",
+        "cookie-parser": "~1.4.4",
+        "debug": "~2.6.9",
+        "dotenv": "8.2.0",
+        "ejs": "~2.6.1",
+        "express": "~4.16.1",
+        "express-ejs-layouts": "2.5.0",
+        "express-session": "1.17.1",
+        "fs": "0.0.1-security",
+        "google-auth-library": "6.1.1",
+        "googleapis": "61.0.0",
+        "http": "0.0.1-security",
+        "http-errors": "~1.6.3",
+        "morgan": "~1.9.1",
+        "open": "7.3.0",
+        "passport": "0.4.1",
+        "passport-google-oauth": "2.0.0",
+        "prismjs": "1.22.0",
+        "readline": "1.3.0",
+        "server-destroy": "1.0.1",
+        "url": "0.11.0"
+    },
+    "devDependencies": {
+        "nodemon": "2.0.5"
+    },
+    "author": "Nick Lin <r951236958@gmail.com>",
+    "license": "MIT"
+}

@@ -1,0 +1,572 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  margin-bottom: 100px;
+}
+
+html {
+  font-family: 'Noto Sans TC', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 15px;
+  font-weight: 400;
+  position: relative;
+  min-height: 100%;
+}
+
+a {
+  color: #76daff;
+}
+
+div,
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+header,
+main,
+footer {
+  padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+
+  header,
+  main,
+  footer {
+    padding-left: 0;
+  }
+}
+
+nav.top-nav {
+  height: 110px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+  background-color: transparent
+}
+
+nav.top-nav h1.header {
+  margin: 0;
+  padding-top: 22px
+}
+
+a.sidenav-trigger.top-nav {
+  position: absolute;
+  text-align: center;
+  height: 48px;
+  width: 48px;
+  top: 28px;
+  float: none;
+  margin-left: 1.5rem;
+  color: #fff;
+  font-size: 36px;
+  z-index: 2
+}
+
+a.sidenav-trigger.top-nav i {
+  font-size: 32px
+}
+
+@media only screen and (max-width: 992px) {
+
+  header,
+  main,
+  footer {
+    padding-left: 0
+  }
+
+  h5>span {
+    display: block;
+    margin: 0 0 15px 0
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  a.sidenav-trigger.top-nav {
+    left: 0
+  }
+
+  ul.sidenav.sidenav-fixed {
+    border: 0
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  nav .nav-wrapper {
+    text-align: center
+  }
+
+  nav .nav-wrapper a.page-title {
+    font-size: 36px
+  }
+}
+
+@media only screen and (min-width: 601px) {
+
+  main>.container,
+  body>.page-footer>.container,
+  .top-nav>.container,
+  #index-banner>.container,
+  .github-commit>.container {
+    width: 100%
+  }
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+
+.body-login {
+  background: #2c303a url(https://static.codepen.io/assets/logos/codepen-logo-pattern-b477875ac66ffc21e4485a989358c220fac283caf17e602346a50d4250970254.png);
+}
+
+.login-wrap {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px;
+  position: relative;
+}
+
+.login-header {
+  margin: 50px 0 20px 0;
+}
+
+.button {
+  font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+  -webkit-appearance: none;
+  font-size: 1rem;
+  text-shadow: none;
+  line-height: 1.2;
+  display: inline-block;
+  padding: 10px 16px;
+  margin: 0 10px 0 0;
+  position: relative;
+  border-radius: 4px;
+  border: 3px solid transparent;
+  background: #444857;
+  color: white;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-decoration: none !important;
+  text-align: center;
+  font-weight: normal !important;
+}
+
+
+
+.a>svg,
+.button>svg,
+.file-upload-button>svg,
+.button>span>svg,
+.file-upload-button>span>svg,
+.gsc-cursor-page>svg,
+.gsc-cursor-page>span>svg {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  pointer-events: none;
+  vertical-align: bottom;
+  fill: currentColor;
+}
+
+.flex-grid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.signup-callout {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.signup-callout {
+  display: block;
+  padding: 20px;
+  position: relative;
+  background: #2c303a;
+  border-radius: 6px;
+  margin: 0 0 20px 0;
+}
+
+.login-logo svg {
+  width: 148px;
+  height: 48px;
+  fill: #424242;
+  position: absolute;
+  left: 14px;
+  top: 6px;
+}
+
+#log-in-button {
+  display: block;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+#forgot-password-link {
+  text-align: center;
+  display: block;
+}
+
+.login-divider {
+  width: 0%;
+  position: relative;
+}
+
+.login-divider .bar-top {
+  top: 0;
+}
+
+.login-divider .bar {
+  width: 2px;
+  height: 41%;
+  width: 2px;
+  position: absolute;
+  background: #9b9dad;
+  left: -1px;
+}
+
+.login-or {
+  position: absolute;
+  display: block;
+  width: 46px;
+  height: 18%;
+  left: -23px;
+  border: 2px solid #9b9dad;
+  top: 41%;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 30px;
+  color: #b7bbc8;
+}
+
+.login-divider .bar-bottom {
+  bottom: 0;
+}
+
+.social-auth-errors {
+  display: none;
+}
+
+.little-big-header {
+  font-size: 4.5rem;
+  margin: 0;
+  color: white;
+}
+
+.login-half {
+  width: 50%;
+}
+
+.login-half.left {
+  padding-right: 10%;
+  width: 55%;
+}
+
+.login-half.right {
+  padding-left: 10%;
+  width: 45%;
+}
+
+.login-divider {
+  width: 0%;
+  position: relative;
+}
+
+.social-account-button {
+  padding-left: 60px;
+  text-align: left;
+  margin: 0 0 10px 0;
+}
+
+.button-fullwidth {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.social-account-button .icon {
+  width: 26px;
+  height: 26px;
+  fill: #fff;
+  position: absolute;
+  left: 14px;
+  top: 6px;
+}
+
+.twitter-button {
+  background: #60b5f0;
+  color: white;
+}
+
+.twitter-button:hover:not([disabled]),
+.twitter-button:focus:not([disabled]) {
+  background: #e6e2e4;
+  color: black !important;
+  text-shadow: none;
+}
+
+.github-button {
+  background: #868ca0;
+  color: white;
+}
+
+.github-button:hover:not([disabled]),
+.github-button:focus:not([disabled]) {
+  color: black !important;
+  background: #c7c9d3;
+  text-shadow: none;
+}
+
+.facebook-button {
+  background: #4464a2;
+  color: white;
+}
+
+.facebook-button:hover:not([disabled]),
+.facebook-button:focus:not([disabled]) {
+  background: #e6e2e4;
+  color: black !important;
+  text-shadow: none;
+}
+
+.gsigin-button {
+  background: #fff;
+  color: black;
+}
+
+.gsigin-button:hover:not([disabled]),
+.gsigin-button:focus:not([disabled]) {
+  background: #e6e2e4;
+  color: black !important;
+  text-shadow: none;
+}
+
+.google-signin-button {
+  background: #4285f4;
+  color: white;
+}
+
+.google-signin-button:hover:not([disabled]),
+.google-signin-button:focus:not([disabled]) {
+  background: #e6e2e4;
+  color: black !important;
+  text-shadow: none;
+}
+
+.icon-button i {
+  position: absolute;
+  left: 14px;
+  top: 6px;
+}
+
+.google-signin-button .g-icon {
+  background: url('https://raw.githubusercontent.com/r951236958/express-with-google-sheets/main/public/images/google-brands.svg?sanitize=true') transparent 5px 50% no-repeat;
+  display: inline-block;
+  color: white;
+  vertical-align: middle;
+  width: 34px;
+  height: 34px;
+  padding: 8px;
+}
+
+span.buttonText {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 42px;
+  padding-right: 42px;
+  font-size: 14px;
+  font-weight: bold;
+  /* Use the Roboto font that is loaded in the <head> */
+  font-family: 'Roboto', sans-serif;
+}
+
+.module {
+  display: block;
+  padding: 20px;
+  position: relative;
+  background: #2c303a;
+  border-radius: 6px;
+  margin: 0 0 20px 0;
+}
+
+.g-btn {
+  display: inline-block;
+  background: white;
+  color: #444;
+  height: 50px;
+  line-height: 50px;
+  border: thin solid #888;
+  box-shadow: 1px 1px 1px grey;
+  white-space: nowrap;
+}
+
+.g-btn.dark {
+  background-color: #4285f4;
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.g-btn.dark>.g-icon {
+  background-color: #fff;
+}
+
+.g-btn:hover {
+  cursor: pointer;
+}
+
+.g-btn span.label {
+  font-family: serif;
+  font-weight: normal;
+}
+
+.g-btn .g-icon {
+  background: rgb(255, 255, 255) url('https://raw.githubusercontent.com/r951236958/express-with-google-sheets/main/public/images/google-brands.svg?sanitize=true') no-repeat scroll center / 18px auto padding-box border-box;
+  display: inline-block;
+  vertical-align: middle;
+  width: 34px;
+  height: 34px;
+  padding: 8px;
+}
+
+.g-btn span.buttonText {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 13px;
+  line-height: 34px;
+  font-weight: bold;
+  /* Use the Roboto font that is loaded in the <head> */
+  font-family: 'Roboto', sans-serif;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.svg {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.icon::before {
+  display: none;
+}
+
+svg.icon.icon-google-logo {
+  width: 148px;
+  height: 48px;
+  fill: #efefef;
+}
+
+.icon.g-icon {
+  background: url('https://raw.githubusercontent.com/r951236958/express-with-google-sheets/main/public/images/g-normal.svg?sanitize=true');
+}
+
+
+.icon.md-18 {
+  width: 18px;
+  height: 18px;
+}
+
+.icon.md-24 {
+  width: 24px;
+  height: 24px;
+}
+
+.icon.md-26 {
+  width: 26px;
+  height: 26px;
+}
+
+.icon.md-36 {
+  width: 36px;
+  height: 36px;
+}
+
+.icon.md-48 {
+  width: 48px;
+  height: 48px;
+}
+
+.icon.md-4x {
+  width: 4rem;
+  height: 4rem;
+}
+
+.google-button {
+  height: 40px;
+  border-width: 0;
+  background: white;
+  color: #737373;
+  border-radius: 5px;
+  white-space: nowrap;
+  box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.05);
+  transition-property: background-color, box-shadow;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+  padding: 0;
+
+  &:focus,
+  &:hover {
+    box-shadow: 1px 4px 5px 1px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    background-color: #e5e5e5;
+    box-shadow: none;
+    transition-duration: 10ms;
+  }
+}
+
+.opacity-1 {
+  opacity: .1;
+}
+
+.opacity-6 {
+  opacity: .6;
+}
+
+.sidenav.dark-bg li a,
+.sidenav.dark-bg li a i.material-icons {
+    color: #fff;
+}

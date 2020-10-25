@@ -1,0 +1,109 @@
+<!-- BASEN ON DRIBBBLE SHOT: https://dribbble.com/shots/2209627-UI8-Nav -->
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="container-grid">
+        <div class="container">
+          <span class="menu-trigger">
+            <i class="menu-trigger-bar top"></i>
+            <i class="menu-trigger-bar middle"></i>
+            <i class="menu-trigger-bar bottom"></i>
+          </span>
+          <span class="close-trigger">
+            <i class="close-trigger-bar left"></i>
+            <i class="close-trigger-bar right"></i>
+          </span>
+          <span class="logo">
+            <span>
+              ⬢
+              <i class="logo-title">UI</i>
+              <i class="logo-badge">6</i>
+            </span>
+          </span>
+
+          <div class="inner-container">
+            <i class="menu-bg top"></i>
+            <i class="menu-bg middle"></i>
+            <i class="menu-bg bottom"></i>
+            <div class="menu-container">
+              <div class="container">
+                <ul class="menu">
+                  <li>
+                    <a href="#">Login</a>
+                  </li>
+                  <li>
+                    <a href="#">Create account</a>
+                  </li>
+                  <li>
+                    <a href="#">Support</a>
+                  </li>
+                  <li>
+                    <a href="#">About</a>
+                  </li>
+                </ul>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6">
+      <% include partials/sidenav %>
+      <div class="container-grid">
+        <div class="container">
+          <div class="my-login">
+            <div class="login-body">
+              <!-- 登入/登出 -->
+              <div class="sign-in-out">
+                <a id="sign-in-or-out-button" class="button social-account-button gsigin-button button-fullwidth">
+                  <i class="icon g-normal"></i>
+                  <span class="buttonText">Sign In/Authorize</span>
+                </a>
+              </div>
+              <!-- 中斷連結 -->
+              <div class="rovoke-access">
+                <a id="revoke-access-button" class="button social-account-button gsigin-button button-fullwidth" style="display: none;">
+                  <i class="icon g-normal"></i>
+                  <span class="buttonText">Revoke access</span>
+                </a>
+              </div>
+              <!-- 登入狀態 -->
+              <div class="login-status">
+                <div id="auth-status" class="white-text" style="display: inline;"></div>
+                <hr>
+                <ul class="collection" id="user-profile" style="display: none;">
+                  <li id="user-name" class="collection-item"></li>
+                  <li id="user-email" class="collection-item"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="fab-btn">
+            <div class="fixed-action-btn">
+              <a class="btn-floating btn-large grey darken-2">
+                <i class="large material-icons">mode_edit</i>
+              </a>
+              <ul>
+                <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+                <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+                <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+                <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+<% include partials/jsdefaults %>
+

@@ -1,0 +1,221 @@
+<% include partials/header %>
+
+<main class="body-login">
+    <div class="container">
+        <div class="login-wrap">
+            <div class="login-main">
+
+
+                <div class="login-header">
+                    <h1 class="login-logo social-account-button">
+                        <svg class="icon icon-google-logo">
+                            <use xlink:href="/map.svg#icon-google-logo"></use>
+                        </svg>
+                    </h1>
+                    <h2 class="little-big-header"><%= title %>!</h2>
+                </div>
+                <div class="flex-grid">
+                    <div class="login-half left">
+                        <div class="login-area">
+                            <div class="sign-in-out">
+                                <!-- 登入/登出 -->
+                                <a id="sign-in-or-out-button" class="button social-account-button gsigin-button button-fullwidth">
+                                    <svg class="icon" width="26" height="26">
+                                        <use xlink:href="/map.svg#g-icon" />
+                                    </svg>
+                                    <span class="buttonText">Sign In/Authorize</span>
+                                </a>
+                            </div>
+                            
+                            <form class="login-form top-label-form" id="login-login-form" action="/login" accept-charset="UTF-8" method="post" _lpchecked="1"><input type="hidden" name="authenticity_token" value="PsR4Q+I5pbjNgckePCvCJxa/VCcyTRCbLTGOc4GjVuahyuH0lUddJnSAhmTAPsF9LCxcuLkcCm0T0RcuIZSHfw==">
+                                <div id="login-email" class="field">
+                                    <label for="login-email-field">Username or Email</label>
+                                    <input type="text" name="email" id="login-email-field" value="" required="required" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAUBJREFUOBGVVE2ORUAQLvIS4gwzEysHkHgnkMiEc4zEJXCMNwtWTmDh3UGcYoaFhZUFCzFVnu4wIaiE+vvq6+6qTgthGH6O4/jA7x1OiCAIPwj7CoLgSXDxSjEVzAt9k01CBKdWfsFf/2WNuEwc2YqigKZpK9glAlVVwTTNbQJZlnlCkiTAZnF/mePB2biRdhwHdF2HJEmgaRrwPA+qqoI4jle5/8XkXzrCFoHg+/5ICdpm13UTho7Q9/0WnsfwiL/ouHwHrJgQR8WEwVG+oXpMPaDAkdzvd7AsC8qyhCiKJjiRnCKwbRsMw9hcQ5zv9maSBeu6hjRNYRgGFuKaCNwjkjzPoSiK1d1gDDecQobOBwswzabD/D3Np7AHOIrvNpHmPI+Kc2RZBm3bcp8wuwSIot7QQ0PznoR6wYSK0Xb/AGVLcWwc7Ng3AAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: pointer;" autocomplete="off">
+                                </div>
+                                <div id="login-password" class="field">
+                                    <label for="login-password-field">Password</label>
+                                    <input name="password" required="required" type="password" id="login-password-field_" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAUBJREFUOBGVVE2ORUAQLvIS4gwzEysHkHgnkMiEc4zEJXCMNwtWTmDh3UGcYoaFhZUFCzFVnu4wIaiE+vvq6+6qTgthGH6O4/jA7x1OiCAIPwj7CoLgSXDxSjEVzAt9k01CBKdWfsFf/2WNuEwc2YqigKZpK9glAlVVwTTNbQJZlnlCkiTAZnF/mePB2biRdhwHdF2HJEmgaRrwPA+qqoI4jle5/8XkXzrCFoHg+/5ICdpm13UTho7Q9/0WnsfwiL/ouHwHrJgQR8WEwVG+oXpMPaDAkdzvd7AsC8qyhCiKJjiRnCKwbRsMw9hcQ5zv9maSBeu6hjRNYRgGFuKaCNwjkjzPoSiK1d1gDDecQobOBwswzabD/D3Np7AHOIrvNpHmPI+Kc2RZBm3bcp8wuwSIot7QQ0PznoR6wYSK0Xb/AGVLcWwc7Ng3AAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;" autocomplete="off">
+                                </div>
+                                <div>
+                                    <input type="hidden" id="login-type" name="login-type" value="fullpage">
+                                </div>
+                                <div id="login-error"></div>
+                                <div>
+                                    <button id="log-in-button" class="recaptcha-trigger-button button green action-button expand-right">
+                                        <span class="label">Log In</span>
+                                        <span class="spinner"></span>
+                                    </button>
+                                    &nbsp;&nbsp;
+                                    <a href="#" id="forgot-password-link" class="forgot-password-link">
+                                        Forgot Password?
+                                    </a>
+                                </div>
+                            </form>
+                            <form class="module login-form top-label-form" id="forgot-password-form" action="#0">
+                                <h3>Reset Your Password</h3>
+                                <div class="field">
+                                    <label for="forgot-email">Username Or Email</label>
+                                    <input type="text" id="forgot-email" name="forgot-email" placeholder="your@email.com" required="">
+                                </div>
+                                <div class="field">
+                                    <input id="forgot-email-btn" type="submit" value="Send Password Reset Email" class="button button-medium">
+                                </div>
+                                <div id="sent-message">
+                                    <div id="sent-message-message"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="login-divider">
+                        <div class="bar bar-top"></div>
+                        <span class="login-or">OR</span>
+                        <div class="bar bar-bottom"></div>
+                    </div>
+                    <div class="login-half right">
+                        <div class="row google-login">
+                            <!-- 斷開連結 -->
+                            <div class="rovoke-access">
+                                <a id="revoke-access-button" class="button social-account-button gsigin-button button-fullwidth" style="display: none;">
+                                    <svg class="icon" width="26" height="26">
+                                        <use xlink:href="/map.svg#g-icon" />
+                                    </svg>
+                                    <span class="buttonText">Revoke access</span>
+                                </a>
+                            </div>
+                            <hr>
+                            <!-- 登入狀態 -->
+                            <div class="login-status">
+                                <div id="auth-status" class="white-text" style="display: inline;"></div>
+                                <hr>
+                                <ul class="collection" id="user-profile" style="display: none;">
+                                    <li id="user-name" class="collection-item"></li>
+                                    <li id="user-email" class="collection-item"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="login-social-buttons">
+                            <a id="login-with-twitter" href="/auth/twitter" data-network="Twitter" class="button social-account-button twitter-button button-fullwidth">
+                                <svg class="icon" width="26" height="26">
+                                    <use xlink:href="/map.svg#icon-twitter">
+                                    </use>
+                                </svg>
+                                <span>Log In with Twitter</span>
+                            </a>
+                            <a id="login-with-github" href="/auth/github" data-network="Github" class="button github-button social-account-button button-fullwidth">
+                                <svg class="icon" width="26" height="26">
+                                    <use xlink:href="/map.svg#icon-githug">
+                                    </use>
+                                </svg>
+                                <span>Log In with GitHub</span>
+                            </a>
+                            <a id="login-with-facebook" href="/auth/facebook" data-network="Facebook" class="button social-account-button facebook-button button-fullwidth">
+                                <svg class="icon" width="26" height="26">
+                                    <use xlink:href="/map.svg#icon-facebook">
+                                    </use>
+                                </svg>
+                                <span>Log In with Facebook</span>
+                            </a>
+                            <a href="/auth/google" id="login-whith-google" class="button social-account-button gsigin-button button-fullwidth">
+                                <svg class="icon" width="26" height="26">
+                                    <use xlink:href="/map.svg#g-icon" />
+                                    </use>
+                                </svg>
+                                <span>Log In with Google</span>
+                            </a>
+                            <a href="/" id="google-login-button" class="button social-account-button google-signin-button button-fullwidth">
+                                <span class="svg-icon"><svg class="icon md-26">
+                                        <use xlink:href="#g-brands-2x-fw"></use>
+                                    </svg></span>
+                                <span class="buttonText">Log In with Google</span>
+                            </a>
+                            <a href="/" id="google-logo-login-button" class="button social-account-button google-signin-button button-fullwidth">
+                                <span class="svg-icon"><svg class="icon google-signin-btn">
+                                        <use xlink:href="/map.svg#icon-google-logo"></use>
+                                    </svg></span>
+                                <span class="buttonText">Log In with Google</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="login-body">
+                    <div class="login-area">
+                        
+                        <div class="row login-link">
+                            <button id="log-in-button" class="recaptcha-trigger-button button green action-button expand-right">
+                                <span class="label">Log In</span>
+                                <span class="spinner"></span>
+                            </button>
+                            &nbsp;&nbsp;
+                            <a href="#" id="forgot-password-link" class="forgot-password-link">
+                                Forgot Password?
+                            </a>
+                            <a class="waves-effect waves-light btn white" href="https://accounts.google.com/AddSession" target="_blank">
+                                <span class="blue-grey-text text-darken-4">
+                                    <i class="material-icons left">person_add_alt_1</i>
+                                    新增帳號</span></a>
+                        </div>
+                        <form class="login-form top-label-form" id="login-login-form" action="/login" accept-charset="UTF-8" method="post" hidden><input type="hidden" name="authenticity_token" value="ivG9y8N8TbSj1T23Wdw27+P0O9rJNoc1EtNxlrisE9NbGLQUqyCaT+/3ojrtLWeH6uiMN4pDuPsl+8S84sljag==">
+                            <div id="login-email" class="field">
+                                <label for="login-email-field">Username or Email</label>
+                                <input type="text" name="email" id="login-email-field" value="" required="required" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAUBJREFUOBGVVE2ORUAQLvIS4gwzEysHkHgnkMiEc4zEJXCMNwtWTmDh3UGcYoaFhZUFCzFVnu4wIaiE+vvq6+6qTgthGH6O4/jA7x1OiCAIPwj7CoLgSXDxSjEVzAt9k01CBKdWfsFf/2WNuEwc2YqigKZpK9glAlVVwTTNbQJZlnlCkiTAZnF/mePB2biRdhwHdF2HJEmgaRrwPA+qqoI4jle5/8XkXzrCFoHg+/5ICdpm13UTho7Q9/0WnsfwiL/ouHwHrJgQR8WEwVG+oXpMPaDAkdzvd7AsC8qyhCiKJjiRnCKwbRsMw9hcQ5zv9maSBeu6hjRNYRgGFuKaCNwjkjzPoSiK1d1gDDecQobOBwswzabD/D3Np7AHOIrvNpHmPI+Kc2RZBm3bcp8wuwSIot7QQ0PznoR6wYSK0Xb/AGVLcWwc7Ng3AAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;" autocomplete="off">
+                            </div>
+                            <div id="login-password" class="field">
+                                <label for="login-password-field">Password</label>
+                                <input name="password" required="required" type="password" id="login-password-field_" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAUBJREFUOBGVVE2ORUAQLvIS4gwzEysHkHgnkMiEc4zEJXCMNwtWTmDh3UGcYoaFhZUFCzFVnu4wIaiE+vvq6+6qTgthGH6O4/jA7x1OiCAIPwj7CoLgSXDxSjEVzAt9k01CBKdWfsFf/2WNuEwc2YqigKZpK9glAlVVwTTNbQJZlnlCkiTAZnF/mePB2biRdhwHdF2HJEmgaRrwPA+qqoI4jle5/8XkXzrCFoHg+/5ICdpm13UTho7Q9/0WnsfwiL/ouHwHrJgQR8WEwVG+oXpMPaDAkdzvd7AsC8qyhCiKJjiRnCKwbRsMw9hcQ5zv9maSBeu6hjRNYRgGFuKaCNwjkjzPoSiK1d1gDDecQobOBwswzabD/D3Np7AHOIrvNpHmPI+Kc2RZBm3bcp8wuwSIot7QQ0PznoR6wYSK0Xb/AGVLcWwc7Ng3AAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;" autocomplete="off">
+                            </div>
+                            <div>
+                                <input type="hidden" id="login-type" name="login-type" value="fullpage">
+                            </div>
+                            <div id="login-error"></div>
+                            <div>
+                                <button id="log-in-button" class="recaptcha-trigger-button button green action-button expand-right">
+                                    <span class="label">Log In</span>
+                                    <span class="spinner"></span>
+                                </button>
+                                &nbsp;&nbsp;
+                                <a href="#" id="forgot-password-link" class="forgot-password-link">
+                                    Forgot Password?
+                                </a>
+                            </div>
+                        </form>
+                        <form class="module login-form top-label-form" id="forgot-password-form" action="#0" hidden>
+                            <h3>Reset Your Password</h3>
+                            <div class="field">
+                                <label for="forgot-email">Username Or Email</label>
+                                <input type="text" id="forgot-email" name="forgot-email" placeholder="your@email.com" required="">
+                            </div>
+                            <div class="field">
+                                <input id="forgot-email-btn" type="submit" value="Send Password Reset Email" class="button button-medium">
+                            </div>
+                            <div id="sent-message">
+                                <div id="sent-message-message"></div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+
+                <div class="signup-callout">
+                    Need an account? <a href="/accounts/signup/user/free">Sign up now!</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- FontAwesome SVG -->
+    <div class="row" hidden>
+        <i data-fa-symbol="g-brands" class="fab fa-google"></i>
+        <i data-fa-symbol="g-brands-fw" class="fab fa-google fa-fw"></i>
+        <i data-fa-symbol="g-brands-2x" class="fab fa-google fa-2x"></i>
+        <i data-fa-symbol="g-brands-2x-fw" class="fab fa-google fa-2x fa-fw"></i>
+        <i data-fa-symbol="user-plus" class="fas fa-user-plus"></i>
+        <i data-fa-symbol="user-plus-fw" class="fas fa-user-plus fa-fw"></i>
+        <i data-fa-symbol="robot" class="fas fa-robot"></i>
+    </div>
+</main>
+
+<% include partials/footer %>
+<% include partials/jsdefaults %>

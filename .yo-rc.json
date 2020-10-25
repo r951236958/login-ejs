@@ -1,0 +1,13 @@
+{
+  "generator-gitignore-io": {
+    "options": [
+      "dotenv",
+      "node",
+      "sass",
+      "vscode",
+      "yarn",
+      "yeoman",
+      "macos"
+    ]
+  }
+}
