@@ -35,6 +35,7 @@
         "url": "0.11.0"
     },
     "devDependencies": {
+        "html-webpack-plugin": "^5.0.0-alpha.7",
         "nodemon": "2.0.5"
     },
     "author": "Nick Lin <r951236958@gmail.com>",

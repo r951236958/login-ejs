@@ -1,64 +1,57 @@
 <!-- BASEN ON DRIBBBLE SHOT: https://dribbble.com/shots/2209627-UI8-Nav -->
-  <div class="row">
+<div class="row">
 
     <div class="col s12">
-      <% include partials/sidenav %>
-      <div class="container-grid">
-        <div class="container">
-          <div class="my-login">
-            <div class="login-body">
-              <!-- 登入/登出 -->
-              <div class="sign-in-out">
-                <a id="sign-in-or-out-button" class="button social-account-button gsigin-button button-fullwidth">
+        <% include partials/sidenav %>
+        <div class="container-grid">
+            <div class="container">
+                <div class="my-login">
+                    <%= tes t %>
+                    <div class="login-body">
+                        <!-- 登入/登出 -->
+                        <div class="sign-in-out">
+                            <a id="sign-in-or-out-button" class="button social-account-button gsigin-button button-fullwidth">
                   <i class="icon g-normal"></i>
                   <span class="buttonText">Sign In/Authorize</span>
                 </a>
-              </div>
-              <!-- 中斷連結 -->
-              <div class="rovoke-access">
-                <a id="revoke-access-button" class="button social-account-button gsigin-button button-fullwidth" style="display: none;">
+                        </div>
+                        <!-- 中斷連結 -->
+                        <div class="rovoke-access">
+                            <a id="revoke-access-button" class="button social-account-button gsigin-button button-fullwidth" style="display: none;">
                   <i class="icon g-normal"></i>
                   <span class="buttonText">Revoke access</span>
                 </a>
-              </div>
-              <!-- 登入狀態 -->
-              <div class="login-status">
-                <div id="auth-status" class="white-text" style="display: inline;"></div>
-                <hr>
-                <ul class="collection" id="user-profile" style="display: none;">
-                  <li id="user-name" class="collection-item"></li>
-                  <li id="user-email" class="collection-item"></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="fab-btn">
-            <div class="fixed-action-btn">
-              <a class="btn-floating btn-large grey darken-2">
+                        </div>
+                        <!-- 登入狀態 -->
+                        <div class="login-status">
+                            <div id="auth-status" class="white-text" style="display: inline;"></div>
+                            <hr>
+                            <ul class="collection" id="user-profile" style="display: none;">
+                                <li id="user-name" class="collection-item"></li>
+                                <li id="user-email" class="collection-item"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="fab-btn">
+                    <div class="fixed-action-btn">
+                        <a class="btn-floating btn-large grey darken-2">
                 <i class="large material-icons">mode_edit</i>
               </a>
-              <ul>
-                <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-                <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-                <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-                <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
-              </ul>
+                        <ul>
+                            <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+                            <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a>
+                            </li>
+                            <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+                            <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-    
-  </div>
 
-
-
-
-
-
-
-
+</div>
 
 
 <% include partials/jsdefaults %>
-
