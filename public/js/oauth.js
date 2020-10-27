@@ -22,6 +22,7 @@ function initClient() {
     }).then(function () {
         GoogleAuth = gapi.auth2.getAuthInstance();
 
+
         // Listen for sign-in state changes.
         GoogleAuth.isSignedIn.listen(updateSigninStatus);
 
@@ -39,18 +40,36 @@ function initClient() {
         });
 
         GoogleAuth.attachClickHandler('sign-in-or-out-button', {}, onSuccess, onFailure);
+
     });
+}
+
+function attachSignin(element) {
+    console.log(element.id);
+    GoogleAuth.attachClickHandler(element, {},
+        function (googleUser) {
+            document.getElementById('ShowName').innerText = "Signed in: " +
+                googleUser.getBasicProfile().getName();
+
+        },
+        function (error) {
+            alert(JSON.stringify(error, undefined, 2));
+        });
 }
 
 function handleAuthClick() {
     if (GoogleAuth.isSignedIn.get()) {
         // User is authorized and has clicked "Sign out" button.
-        GoogleAuth.signOut();
+        GoogleAuth.signOut().then(function () {
+            console.log('User signed out.');
+            $('#auth-status').html('已登出');
+        });
     } else {
         // User is not signed in. Start Google auth flow.
         GoogleAuth.signIn();
     }
 }
+
 
 function revokeAccess() {
     GoogleAuth.disconnect();
@@ -71,6 +90,7 @@ function setSigninStatus() {
         $('#user-email').text('Email:' + userEmail);
         $('#auth-status').html('You are currently signed in and have granted ' +
             'access to this app.');
+        $('#ShowName').html('User Name: ' + user.getBasicProfile().getName());
 
     } else {
         $('#sign-in-or-out-button > .buttonText').text('Sign In/Authorize');
@@ -78,11 +98,13 @@ function setSigninStatus() {
         $('#user-profile').css('display', 'none');
         $('#auth-status').html('You have not authorized this app or you are ' +
             'signed out.');
+        $('#ShowName').html('已登出');
     }
 }
 
 var onSuccess = function (user) {
     console.log('Signed in as ' + user.getBasicProfile().getName());
+    $('#auth-status').html('使用者: ' + user.getBasicProfile().getName());
 };
 
 var onFailure = function (error) {

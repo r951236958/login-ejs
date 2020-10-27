@@ -1,5 +1,4 @@
 <!-- BASEN ON DRIBBBLE SHOT: https://dribbble.com/shots/2209627-UI8-Nav -->
-
 <div class="row">
     <div class="col s12">
         <div class="container-grid">
@@ -9,7 +8,6 @@
                         <li class="tab col s6">
                             <a class="white-text active" href="#test1">
                                 <i class="material-icons md-32">portrait</i>
-                                
                             </a>
                         </li>
                         <li class="tab col s6">
@@ -24,50 +22,62 @@
                         <div class="row">
                             <h4 class="white-text">Login</h4>
                         </div>
+                        <div class="row">
+
+                            <a class="button button-fullwidth"><svg class="icon icon-g-normal">
+                                    <use xlink:href="#icon-g-normal"></use>
+                                </svg><span class="buttonText">Sign In</span></a>
+
+                        </div>
+                        <div class="row">
+
+                            <div id="ShowName" class="white-text"></div>
                             <!-- 登入/登出 -->
-                            <div class="sign-in-out row">
-                                <a id="sign-in-or-out-button" class="button social-account-button gsigin-button button-fullwidth">
-                                    <i class="icon g-normal"></i>
-                                    <span class="buttonText">Sign In/Authorize</span>
-                                </a>
+                            <div id="sign-in-or-out-button" class="gBtn google-oauth-signin">
+                                <span class="icon"></span>
+                                <span class="gBtText signInText">Signin With Google</span>
                             </div>
-                            <!-- 中斷連結 -->
-                            <div class="rovoke-access row">
-                                <a id="revoke-access-button" class="button social-account-button gsigin-button button-fullwidth" style="display: none;">
-                                    <i class="icon g-normal"></i>
-                                    <span class="buttonText">Revoke access</span>
-                                </a>
+
+
+                        </div>
+
+                        <!-- 中斷連結 -->
+                        <div class="rovoke-access row">
+                            <a id="revoke-access-button" class="gBtn" style="display: none;">
+                                <span class="icon"></span>
+                                <span class="gBtnText">Revoke access</span>
+                            </a>
+                        </div>
+                        <!-- 登入狀態 -->
+                        <div class="login-status row">
+                            <h5 class="header-text white-text">監控登入狀態</h5>
+                            <div id="auth-status" class="white-text" style="display: inline;"></div>
+                            <hr>
+                            <div class="collection with-header" id="user-profile" style="display: none;">
+                                <div class="collection-header">使用者資訊</div>
+                                <div id="user-name" class="collection-item"></div>
+                                <div id="user-email" class="collection-item"></div>
                             </div>
-                            <!-- 登入狀態 -->
-                            <div class="login-status row">
-                                <div id="auth-status" class="white-text" style="display: inline;"></div>
-                                <hr>
-                                <ul class="collection" id="user-profile" style="display: none;">
-                                    <li id="user-name" class="collection-item"></li>
-                                    <li id="user-email" class="collection-item"></li>
-                                </ul>
-                            </div>
-    
+                        </div>
+
 
                     </div>
-                        
-            </div>
-            <div id="test2" class="col s12">
-                <div class="container">
+
+                </div>
+                <div id="test2" class="col s12">
+                    <div class="container">
 
                         <ul class="collection with-header">
                             <li class="collection-header grey darken-4 white-text">
                                 <h4>Links</h4>
                             </li>
                             <li class="collection-item grey darken-4">
-                                <a class="white-text" href="https://translate.google.com/?hl=zh-TW&tab=TT#view=home&op=translate&sl=auto&tl=zh-CN"
-                                        target="_blank">
+                                <a class="white-text" href="https://translate.google.com/?hl=zh-TW&tab=TT#view=home&op=translate&sl=auto&tl=zh-CN" target="_blank">
                                     <i class="material-icons left">g_translate</i>Google翻譯
                                 </a>
                             </li>
                             <li class="collection-item grey darken-4">
-                                <a class="white-text" href="https://docs.google.com/spreadsheets/d/1gzDP5JSYbjPs3ypXvHgZXDp7hbczR5l0OxVDBulMjG0"
-                                        target="_blank">
+                                <a class="white-text" href="https://docs.google.com/spreadsheets/d/1gzDP5JSYbjPs3ypXvHgZXDp7hbczR5l0OxVDBulMjG0" target="_blank">
                                     <i class="material-icons left">today</i>日報
                                 </a>
                             </li>
@@ -79,12 +89,12 @@
                             <li class="collection-item grey darken-4">
                                 <a class="white-text" a target="_blank" href="https://docs.google.com/spreadsheets/d/1mtz6488MHF6LxGPVro5X5qneZJt2Hv3SqLekWwwk0zw">
                                     <i class="material-icons left">calculate</i>數據計算
-                                    </a>
+                                </a>
                             </li>
                             <li class="collection-item grey darken-4">
                                 <a class="white-text" target="_blank" href="https://docs.google.com/spreadsheets/d/18SWgCzsUB4rHSNl_qEe8OrlbmwGvqnZkv3wuKQznshY">
                                     <i class="material-icons left">filter_alt</i>篩選總表
-                                    </a>
+                                </a>
                             </li>
                             <li class="collection-item grey darken-4">
                                 <a class="white-text" target="_blank" href="https://docs.google.com/spreadsheets/d/1BEgZRROTF-8GyU7KFfG0BT-Gkh1o9qJlzNECzQh14jI">
@@ -94,36 +104,54 @@
                             <li class="collection-item grey darken-4">
                                 <a class="white-text" target="_blank" href="https://docs.google.com/spreadsheets/d/1k9zLpIV5fNq66qujBc8cWxpvCa2nTqWScxlTmowG7Ws">
                                     <i class="material-icons left">folder_shared</i>採購部共用
-                                    </a>
+                                </a>
                             </li>
                             <li class="collection-item grey darken-4">
-                                <a class="white-text" target="_blank"  href="https://docs.google.com/spreadsheets/d/1gqruDNC_8Dp3r5BEuD-lDiL8jlvb4rZMfvXWk1hrYHA">
+                                <a class="white-text" target="_blank" href="https://docs.google.com/spreadsheets/d/1gqruDNC_8Dp3r5BEuD-lDiL8jlvb4rZMfvXWk1hrYHA">
                                     <i class="material-icons left">folder_shared </i>Jayden共用
-                                    </a>
+                                </a>
                             </li>
-                            
+
                         </ul>
 
+                    </div>
                 </div>
             </div>
-        </div>
-            <div class="container">
 
-            <div class="fab-btn">
-                <div class="fixed-action-btn">
-                    <a class="btn-floating btn-large grey darken-2">
-                        <i class="large material-icons">mode_edit</i>
-                    </a>
-                    <ul>
-                        <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-                        <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a>
-                        </li>
-                        <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-                        <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
-                    </ul>
+
+            <div class="container">
+                <div class="fab-btn">
+                    <div class="fixed-action-btn">
+                        <a class="btn-floating btn-large grey darken-2">
+                            <i class="large material-icons">mode_edit</i>
+                        </a>
+                        <ul>
+                            <li><a class="btn-floating red modal-trigger" data-target="google-logo-modal"><i class="material-icons">insert_chart</i></a></li>
+                            <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a>
+                            </li>
+                            <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+                            <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+                        </ul>
+
+                        <div id="google-logo-modal" class="modal">
+                            <div class="modal-content">
+                                <h4>Modal Header</h4>
+                                <p>A bunch of text</p>
+                                <p>SVG Icon</p>
+                                <h3><svg class="icon icon-google-logo">
+                                        <use xlink:href="/map.svg#icon-google-logo"></use>
+                                    </svg></h3>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
 </div>
+
 <% include partials/jsdefaults %>

@@ -59,12 +59,12 @@ $zoom-slow: all 2.4s cubic-bezier(.55, 0, .1, 1);
 }
 
 //FONT IMPORT
-@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+TC:wght@400;900&family=Noto+Sans:wght@400;700&display=swap');
 
 body {
   background-color: lighten($dark-grey, 10%);
   padding: 50px 0;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Noto Sans TC', 'Noto Sans', Lato, sans-serif;
 }
 
 //
@@ -117,7 +117,8 @@ body {
   margin: 10px 0;
 }
 
-.social-account-button .icon {
+.social-account-button .icon,
+.button svg {
   width: 26px;
   height: 26px;
   position: absolute;
@@ -125,13 +126,14 @@ body {
   top: 6px;
 }
 
-.social-account-button .buttonText {
+.buttonText {
   display: inline-block;
   vertical-align: middle;
   padding-left: 42px;
   padding-right: 42px;
   font-size: 14px;
   font-weight: bold;
+  line-height: 1.5rem;
   /* Use the Roboto font that is loaded in the <head> */
   font-family: "Roboto", sans-serif;
 }
@@ -143,13 +145,28 @@ body {
   padding: 8px;
 }
 
-button,
-a {
-  svg.icon {
-    width:26px;
-    height: 26px;
-    fill: #fff;
-  }
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.icon-g-normal {
+  width: 0.9775390625em;
+}
+
+.icon-google {
+  width:26px;
+  height: 26px;
+  fill: #fff;
+}
+
+.icon-google-logo {
+  width: 3.0830078125em;
 }
 
 .sidenav .closebtn {
@@ -209,3 +226,46 @@ li.tab a {
 .md-32 {
   font-size: 32px;
 }
+
+.gBtn {
+  display: inline-block;
+  background: white;
+  color: #444;
+  width: 190px;
+  border-radius: 5px;
+  border: thin solid #888;
+  box-shadow: 1px 1px 1px grey;
+  white-space: nowrap;
+
+  span.icon {
+    background: url('/images/g_light_normal.svg') transparent 5px 50% no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    width: 42px;
+    height: 42px;
+  }
+  span.gBtnText {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 6px;
+    margin-right: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    /* Use the Roboto font that is loaded in the <head> */
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+.gBtn.dark  {
+  background: #4285F4; 
+  color: #fff;
+
+  span.icon {
+    background: url('/images/g_dark_normal.svg') transparent 5px 50% no-repeat;
+  }
+}
+
+.gBtn:hover {
+  cursor: pointer;
+}
+
