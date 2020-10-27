@@ -8,6 +8,15 @@
     $('.tooltipped').tooltip();
     $('select').formSelect();
     $('.tabs').tabs();
+    $('.modal').modal({
+      dismissible: true, // Modal can be dismissed by clicking outside of the modal
+      opacity: .5, // Opacity of modal background
+      in_duration: 250, // Transition in duration
+      out_duration: 200, // Transition out duration
+      //ready: function() { alert('Ready'); }, // Callback for Modal open
+      //complete: function() { alert('Closed'); } // Callback for Modal close
+    });
+    $('.modal-xl').modal();
 
     // for HTML5 "required" attribute
     $("select[required]").css({
@@ -16,6 +25,10 @@
       padding: 0,
       width: 0
     });
+
+    
+
+    
 
     $('.fixed-action-btn').floatingActionButton({
       direction: 'left',

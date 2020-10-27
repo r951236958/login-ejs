@@ -73,7 +73,7 @@ body {
 //
 .container-grid {
   background-color: $dark-grey;
-  max-width: 320px;
+  max-width: 360px;
   min-height: 568px;
   margin: 0 auto;
   border-radius: 8px;
@@ -224,17 +224,10 @@ box-shadow: 0px 9px 13px 0px $black-30;
   text-align: center;
 }
  
-  .my-login {
-    position: absolute;
+.login-body {
     display: block;
-    top: 25%;
-    margin: -52px 0 0 -16px;
-    z-index: 11;
-    
-    .login-body {
-        display: block;
-        max-width: 90%;
-    }
+    max-width: 90%;
+
 
     .button {
       font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
@@ -300,6 +293,31 @@ box-shadow: 0px 9px 13px 0px $black-30;
   width: 34px;
   height: 34px;
   padding: 8px;
+}
+
+button, a {
+  svg.icon {
+    width: 34px;
+    height: 34px;
+    fill: #fff;
+  }
+  
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.login-tab{
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 .gsigin-button {

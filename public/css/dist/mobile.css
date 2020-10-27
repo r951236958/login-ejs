@@ -8,7 +8,7 @@ body {
 
 .container-grid {
   background-color: #222222;
-  max-width: 320px;
+  max-width: 360px;
   min-height: 568px;
   margin: 0 auto;
   border-radius: 8px;
@@ -145,18 +145,11 @@ body {
   text-align: center;
 }
 
-.my-login {
-  position: absolute;
-  display: block;
-  top: 25%;
-  margin: -52px 0 0 -16px;
-  z-index: 11;
-}
-.my-login .login-body {
+.login-body {
   display: block;
   max-width: 90%;
 }
-.my-login .button {
+.login-body .button {
   font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
   -webkit-appearance: none;
   font-size: 1rem;
@@ -177,12 +170,12 @@ body {
   text-align: center;
   font-weight: normal !important;
 }
-.my-login .social-account-button {
+.login-body .social-account-button {
   padding-left: 60px;
   text-align: left;
   margin: 0 0 10px 0;
 }
-.my-login .button-fullwidth {
+.login-body .button-fullwidth {
   display: block;
   width: 100%;
   text-align: center;
@@ -215,6 +208,28 @@ body {
   width: 34px;
   height: 34px;
   padding: 8px;
+}
+
+button svg.icon, a svg.icon {
+  width: 34px;
+  height: 34px;
+  fill: #fff;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.login-tab {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 .gsigin-button {
