@@ -4,18 +4,17 @@
     <div class="col s12">
         <div class="container-grid">
             <div class="row">
-                <div class="col s12">
+                <div class="col s12" id="tabs-button">
                     <ul class="tabs tabs-fixed-width grey darken-4">
                         <li class="tab col s6">
                             <a class="white-text active" href="#test1">
-                                <svg class="icon icon-menu-down">
-                                    <use xlink:href="/map.svg#menu-cool"></use>
-                                </svg>
+                                <i class="material-icons md-32">portrait</i>
+                                
                             </a>
                         </li>
                         <li class="tab col s6">
-                            <a class="white-text" href="#test2">
-                            <i class="material-icons">close</i>
+                            <a class="white-text" href="#test2" id="tab2Btn">
+                                <i class="material-icons md-32" id="tab2BtnIcon">list_alt</i>
                             </a>
                         </li>
                     </ul>
@@ -55,7 +54,7 @@
             </div>
             <div id="test2" class="col s12">
                 <div class="container">
-                    <div class="row">
+
                         <ul class="collection with-header">
                             <li class="collection-header grey darken-4 white-text">
                                 <h4>Links</h4>
@@ -63,62 +62,48 @@
                             <li class="collection-item grey darken-4">
                                 <a class="white-text" href="https://translate.google.com/?hl=zh-TW&tab=TT#view=home&op=translate&sl=auto&tl=zh-CN"
                                         target="_blank">
-                                    <i class="material-icons">g_translate</i>Google翻譯
+                                    <i class="material-icons left">g_translate</i>Google翻譯
                                 </a>
                             </li>
-                            <li class="collection-item grey darken-4 white-text">
+                            <li class="collection-item grey darken-4">
                                 <a class="white-text" href="https://docs.google.com/spreadsheets/d/1gzDP5JSYbjPs3ypXvHgZXDp7hbczR5l0OxVDBulMjG0"
                                         target="_blank">
-                                    <i class="material-icons">today</i>日報
+                                    <i class="material-icons left">today</i>日報
                                 </a>
                             </li>
                             <li class="collection-item grey darken-4">
-                                <a class="dropdown-item white-text" target="_blank" href="https://docs.google.com/spreadsheets/d/1TV1tSV2tnblm0BzfWyUnQZnxxf-R3Cv_Q1-s01lJH9A">
-                                    <i class="material-icons">add_task</i>案件進度
+                                <a class="white-text" target="_blank" href="https://docs.google.com/spreadsheets/d/1TV1tSV2tnblm0BzfWyUnQZnxxf-R3Cv_Q1-s01lJH9A">
+                                    <i class="material-icons left">add_task</i>案件進度
                                 </a>
                             </li>
                             <li class="collection-item grey darken-4">
-                                <a class="dropdown-trigger white-text" href="#!" data-target="dropdown1">
-                                    Google文件
-                                    <i  class="material-icons right">arrow_drop_down</i>
+                                <a class="white-text" a target="_blank" href="https://docs.google.com/spreadsheets/d/1mtz6488MHF6LxGPVro5X5qneZJt2Hv3SqLekWwwk0zw">
+                                    <i class="material-icons left">calculate</i>數據計算
                                     </a>
-                                </li>
-                            <ul id='dropdown1' class='dropdown-content'>
-                                <li>
-                                    <a class="subheader">Google文件</a>
-                                </li>
-                                <div class="divider"></div>
-                                <li>
-                                    <a target="_blank" href="https://docs.google.com/spreadsheets/d/1mtz6488MHF6LxGPVro5X5qneZJt2Hv3SqLekWwwk0zw">數據計算
-                                        </a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="https://docs.google.com/spreadsheets/d/18SWgCzsUB4rHSNl_qEe8OrlbmwGvqnZkv3wuKQznshY">篩選總表
-                                        </a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="https://docs.google.com/spreadsheets/d/1BEgZRROTF-8GyU7KFfG0BT-Gkh1o9qJlzNECzQh14jI">匯入處理
+                            </li>
+                            <li class="collection-item grey darken-4">
+                                <a class="white-text" target="_blank" href="https://docs.google.com/spreadsheets/d/18SWgCzsUB4rHSNl_qEe8OrlbmwGvqnZkv3wuKQznshY">
+                                    <i class="material-icons left">filter_alt</i>篩選總表
                                     </a>
-                                </li>
-                                <li>
-                                    <a target="_blank"
-                                            href="https://docs.google.com/spreadsheets/d/1k9zLpIV5fNq66qujBc8cWxpvCa2nTqWScxlTmowG7Ws">採購部共用
-                                        </a>
-                                </li>
-                                <li>
-                                    <a target="_blank"
-                                            href="https://docs.google.com/spreadsheets/d/1gqruDNC_8Dp3r5BEuD-lDiL8jlvb4rZMfvXWk1hrYHA">Jayden共用
-                                        </a>
-                                </li>
-                                <div class="dropdown-divider"></div>
-                                <li>
-                                    <a target="_blank"
-                                            href="https://docs.google.com/document/d/1rxUeCFo3CkjF4Vj-GWdrom10mPnWe6_bKdR6CT_GjV8/edit">常用批注詞
-                                        </a>
-                                </li>
-                            </ul>
+                            </li>
+                            <li class="collection-item grey darken-4">
+                                <a class="white-text" target="_blank" href="https://docs.google.com/spreadsheets/d/1BEgZRROTF-8GyU7KFfG0BT-Gkh1o9qJlzNECzQh14jI">
+                                    <i class="material-icons left">source</i>匯入處理
+                                </a>
+                            </li>
+                            <li class="collection-item grey darken-4">
+                                <a class="white-text" target="_blank" href="https://docs.google.com/spreadsheets/d/1k9zLpIV5fNq66qujBc8cWxpvCa2nTqWScxlTmowG7Ws">
+                                    <i class="material-icons left">folder_shared</i>採購部共用
+                                    </a>
+                            </li>
+                            <li class="collection-item grey darken-4">
+                                <a class="white-text" target="_blank"  href="https://docs.google.com/spreadsheets/d/1gqruDNC_8Dp3r5BEuD-lDiL8jlvb4rZMfvXWk1hrYHA">
+                                    <i class="material-icons left">folder_shared </i>Jayden共用
+                                    </a>
+                            </li>
+                            
                         </ul>
-                    </div>
+
                 </div>
             </div>
         </div>
