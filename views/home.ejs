@@ -6,28 +6,21 @@
                 <div class="col s12" id="tabs-button">
                     <ul class="tabs tabs-fixed-width grey darken-4">
                         <li class="tab col s6">
-                            <a class="white-text active" href="#test1">
-                                <i class="material-icons md-32">portrait</i>
+                            <a class="white-text active" href="#tab1" id="tab1Btn">
+                                <i class="material-icons md-32" id="tab1BtnIcon">list_alt</i>
                             </a>
                         </li>
                         <li class="tab col s6">
-                            <a class="white-text" href="#test2" id="tab2Btn">
-                                <i class="material-icons md-32" id="tab2BtnIcon">list_alt</i>
+                            <a class="white-text" href="#tab2">
+                                <i class="material-icons md-32">portrait</i>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div id="test1" class="col s12">
+                <div id="tab2" class="col s12">
                     <div class="container">
                         <div class="row">
                             <h4 class="white-text">Login</h4>
-                        </div>
-                        <div class="row">
-
-                            <a class="button button-fullwidth"><svg class="icon icon-g-normal">
-                                    <use xlink:href="#icon-g-normal"></use>
-                                </svg><span class="buttonText">Sign In</span></a>
-
                         </div>
                         <div class="row">
 
@@ -35,7 +28,7 @@
                             <!-- 登入/登出 -->
                             <div id="sign-in-or-out-button" class="gBtn google-oauth-signin">
                                 <span class="icon"></span>
-                                <span class="gBtText signInText">Signin With Google</span>
+                                <span class="gBtnText signInText">Sign in with Google</span>
                             </div>
 
 
@@ -50,21 +43,20 @@
                         </div>
                         <!-- 登入狀態 -->
                         <div class="login-status row">
-                            <h5 class="header-text white-text">監控登入狀態</h5>
-                            <div id="auth-status" class="white-text" style="display: inline;"></div>
-                            <hr>
-                            <div class="collection with-header" id="user-profile" style="display: none;">
-                                <div class="collection-header">使用者資訊</div>
-                                <div id="user-name" class="collection-item"></div>
-                                <div id="user-email" class="collection-item"></div>
-                            </div>
+                            <p class="header-text grey-text lighten-text-1">登入狀態</p>
+                            <div class="white-text" style="display: inline;">
+
+                            <p id="auth-status"></p>
+                            <p id="user-name"></p>
+                            <p id="user-email"></p>
+</div>
                         </div>
 
 
                     </div>
 
                 </div>
-                <div id="test2" class="col s12">
+                <div id="tab1" class="col s12">
                     <div class="container">
 
                         <ul class="collection with-header">

@@ -83,17 +83,17 @@ function setSigninStatus() {
     if (isAuthorized) {
         var userName = user.getBasicProfile().getName();
         var userEmail = user.getBasicProfile().getEmail();
-        $('#sign-in-or-out-button > .buttonText').text('Sign out');
+        $('#sign-in-or-out-button > .gBtnText').text('Sign out');
         $('#revoke-access-button').css('display', 'inline-block');
         $('#user-profile').css('display', 'block');
-        $('#user-name').text('Name:' + userName);
-        $('#user-email').text('Email:' + userEmail);
+        $('#user-name').text('Name: ' + userName);
+        $('#user-email').text('Email: ' + userEmail);
         $('#auth-status').html('You are currently signed in and have granted ' +
             'access to this app.');
         $('#ShowName').html('User Name: ' + user.getBasicProfile().getName());
 
     } else {
-        $('#sign-in-or-out-button > .buttonText').text('Sign In/Authorize');
+        $('#sign-in-or-out-button > .gBtnText').text('Sign in with Google');
         $('#revoke-access-button').css('display', 'none');
         $('#user-profile').css('display', 'none');
         $('#auth-status').html('You have not authorized this app or you are ' +
