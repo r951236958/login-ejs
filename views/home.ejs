@@ -41,15 +41,16 @@
                                 <span class="gBtnText">Revoke access</span>
                             </a>
                         </div>
+                        
                         <!-- 登入狀態 -->
                         <div class="login-status row">
                             <p class="header-text grey-text lighten-text-1">登入狀態</p>
                             <div class="white-text" style="display: inline;">
 
-                            <p id="auth-status"></p>
-                            <p id="user-name"></p>
-                            <p id="user-email"></p>
-</div>
+                                <p id="auth-status"></p>
+                                <p id="user-name"></p>
+                                <p id="user-email"></p>
+                            </div>
                         </div>
 
 
@@ -74,8 +75,8 @@
                                 </a>
                             </li>
                             <li class="collection-item grey darken-4">
-                                <a class="white-text" target="_blank" href="https://docs.google.com/spreadsheets/d/1TV1tSV2tnblm0BzfWyUnQZnxxf-R3Cv_Q1-s01lJH9A">
-                                    <i class="material-icons left">add_task</i>案件進度
+                                <a class="white-text" target="_blank" href="https://docs.google.com/document/d/1rxUeCFo3CkjF4Vj-GWdrom10mPnWe6_bKdR6CT_GjV8">
+                                    <i class="material-icons left">history_edu</i>批注詞
                                 </a>
                             </li>
                             <li class="collection-item grey darken-4">
@@ -119,7 +120,7 @@
                         </a>
                         <ul>
                             <li><a class="btn-floating red modal-trigger" data-target="google-logo-modal"><i class="material-icons">insert_chart</i></a></li>
-                            <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a>
+                            <li><a class="btn-floating yellow darken-1 modal-trigger" data-targer="netlify-login-modal"><i class="material-icons">format_quote</i></a>
                             </li>
                             <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
                             <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
@@ -136,6 +137,19 @@
                             </div>
                             <div class="modal-footer">
                                 <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                            </div>
+                        </div>
+
+                        <div id="netlify-login-modal" class="modal">
+                            <div class="modal-content">
+                                <h4>Netlify Login</h4>
+                                <!-- Netlify Idenetity Login -->
+                                <div class="netlify-login row">
+                                    <button data-netlify-identity-button>Login with Netlify Identity</Button>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="modal-close">Close</div>
                             </div>
                         </div>
                     </div>
